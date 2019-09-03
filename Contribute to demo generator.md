@@ -1,27 +1,33 @@
 # Contribute to community
 
-The Azure DevOps Demo Generator is a service which helps you provision projects. Now we have enabled feature to [build custom template](https://docs.microsoft.com/en-us/azure/devops/demo-gen/build-your-own-template?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json&view=azure-devops) and [provision your project](https://docs.microsoft.com/en-us/azure/devops/demo-gen/build-your-own-template?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json&view=azure-devops#provisioning-your-project-from-your-custom-template) using generated template, also you can share your template to community.
+The Azure DevOps Demo Generator is a service which helps you provision projects. We can accept feedback and changes through Pull Requests, GitHub Issues, or [Email](mailto:AzureDevOpsDemoGenerator@service.microsoft.com) (as appropropriate).  
 
-## How to contribute
+**TO DO: We need some guidance on code contributions; we should be able to borrow the bulk from other Microsoft open source projects.  **
 
-Once you successfully generate and test your template, you can share it with community. This can be done in three ways.
+## Contributing templates
+The Azure DevOps Demo Generator now provides the ability to [build custom templates](https://docs.microsoft.com/en-us/azure/devops/demo-gen/build-your-own-template?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json&view=azure-devops) and [provision projects using that template](https://docs.microsoft.com/en-us/azure/devops/demo-gen/build-your-own-template?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json&view=azure-devops#provisioning-your-project-from-your-custom-template).  However you can also share your template with the broader user community!
 
-1.  Create a pull request to [Azure DevOps Demo Generator](https://github.com/microsoft/AzureDevOpsDemoGenerator/)
-1. Place the template zip file in any public repository and share the link in [Email](mailto:AzureDevOpsDemoGenerator@service.microsoft.com)
-1. Share the template directly through [Email](mailto:AzureDevOpsDemoGenerator@service.microsoft.com)
+Community-provided templates appear in the project selection Community tab and are used the same as any Microsoft-provided template.  These templates are visually inspected but Microsoft does not offer any guarantees on community templates.
 
-    > If you have extensions installed in your organization, tempalte would be generated along with reference to all installed extensions in the ```Extensions.json``` file. You can edit this file and keep only the required extensions for the project. If extensions are not required, keep the file empty.
+We invite you to generate and share your community templates.
 
-## Your template must contian following elements
+### How to contribute
+
+After [creating](https://docs.microsoft.com/en-us/azure/devops/demo-gen/build-your-own-template?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json&view=azure-devops) and testing your template, upload the template zip file to any public location (e.g., [Azure Blob Storage](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) or a GitHub repository).
+
+The create a Pull Request on the [**TO DO: Link to the appropriate config file**](), submit an Issue with the template information, or [Email](mailto:AzureDevOpsDemoGenerator@service.microsoft.com) us with the template information.
+> NOTE: If you have extensions installed in your organization, the generated template will  reference to all installed extensions in the ```Extensions.json``` [**TO DO: Link to the file extensions file in the repo**](). You can edit this file and keep only the required extensions for the project. If extensions are not required, keep the file empty.
+
+### Template elements
 |Keys|Description| 
 |-------|-----------|
-|**Name**| Name of your template, which will be displayed in the text box upon template selection |
-|**ShortName** | Short name for your template. This should not contain any space or special characters|
-|**TemplateFolder**| Name of your tempalte folder. This should not contain any space or special characters|
+|**Name**| Name of your template, which will be displayed during template selection |
+|**ShortName** | Short name for your template. This should not contain spaces or special characters|
+|**TemplateFolder**| Name of your template folder. This should not contain spaces or special characters|
 |**Description** | A brief description about the template|
 |**Tags**| An array of tags, which should be related to technologies used. Ex: .NetCore, Java, Maven, Docker, K8S, etc. |
-| **Icon** | Templte icon to display it publicly in the tempalte selection page |
+| **Icon** | Template icon to display it publicly in the tempalte selection page |
 | **Document link** | Document link for user reference|
 |||
 
-We will communicate via Email once the template validated successfully.
+We will communicate with you once the template has been validated and incorporated.
